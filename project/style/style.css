@@ -24,7 +24,7 @@ margin-top: -20px;
 /* le nav bar */
 .navbar{
   background-color: #131619;
-  height: 60px;
+  height: 65px;
   position: fixed;
   top: 0;
   left: 0;
@@ -37,7 +37,7 @@ margin-top: -20px;
 .navbar ul{
   position: absolute;
   top: 50%;
-  left: 45%;
+  left: 50%;
   transform: translate(-50%,-50%);
   margin: 0;
   padding: 20px 0;
@@ -64,20 +64,47 @@ margin-top: -20px;
 .navbar ul li a .name{
   font-size: 12px;
 }
-.navbar ul li img{
+.navbar ul li a img{
   height: 20px;
   margin: 15px;
   padding-left: 140px;
-
 }
-
+.navbar ul .logo2 img{
+  height: 30px;
+  width: 30px;
+  float: right;
+  margin: 10px;
+  border-radius: 50%;
+}
+.navbar ul  label{
+  color: #fff;
+  float: right;
+  margin-top: 10px;
+}
+.bi-caret-down-fill{
+ color: #e22a55;
+ margin-top: 17px;
+ padding-right: 3px;
+}
+.navbar ul .btn2{
+  background-color:#EE1144;
+  width: 50px;
+  height: 35px;
+  border-radius: 0.6rem;
+  margin-top: 8px;
+  
+}
+.navbar ul .btn2:hover{
+  background-color: #d80032;
+}
 /* la partie gauche de la page */
 
 .sidebar {
   width: 312px;
   height: 100%;
   background-color: #131619;
-  position: fixed;
+  /*
+  position: fixed;*/
   display: flex;
   flex-direction: column;
   margin-top: 10px;
@@ -114,14 +141,43 @@ margin-top: -20px;
   text-align: right;
   margin-top: 5px;
 }
+.sidebar .classement{
+  display: flex;
+}
+.sidebar .classement p{
+color:#c4c4c4;
+text-align: right;
+}
+.sidebar .classement p img{
+  height: 35px;
+  width: 35px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.sidebar .classement h6{
+  color: #fff;
+  margin-top: 10px;
+}
+.sidebar .classement h4{
+  font-size: 12px;
+  color: #c4c4c4;
+  margin-top: 30px;
+  margin-right: -80px;
+}
+.sidebar .classement h3{
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+  margin-right: 150px;
+}
 
 /* la parite de milieu de la page  */
 
 main{
   background-color:#131619;
   width: 530px;
-  margin-right: 340px;
-  margin-top: 20px;
+  margin-right: 320px;
+  margin-top: -800px;
 }
 
 /* le post */
@@ -233,12 +289,25 @@ input:checked[type="checkbox"]:before{
   font-weight: bold;
   font-size: larger;
 }
+.reponse h5{
+  color: black;
+  padding: 16px 20px;
+  text-align: right;
+  font-size: 17px;
+}
 .reponse .compte img{
   height: 50px;
   width: 50px;
   float: right;
   margin: 10px;
   margin-top: -8px;
+  border-radius: 50%;
+}
+.reponse .compte2 img{
+  height: 40px;
+  width: 40px;
+  float: right;
+  margin: 10px;
   border-radius: 50%;
 }
 .reponse .compte label{
@@ -248,6 +317,14 @@ input:checked[type="checkbox"]:before{
   margin-right: 5px;
   font-size: 13px;
 }
+.reponse .compte2 label{
+  float: right;
+  font-weight: bold;
+  color: rgb(24, 24, 24);
+  margin-right: 2px;
+  font-size: 11px;
+  margin-top: 14px;
+}
 .reponse .compte p{
   font-size: 11px;
   color: #919191;
@@ -255,9 +332,18 @@ input:checked[type="checkbox"]:before{
   margin-right: -70px;
 
 }
+.reponse .compte2 p{
+  font-size: 10px;
+  color: #919191;
+  float: right;
+  margin-right: -90px;
+  margin-top: 10px;
+}
 .reponse .rep label{
   float: right;
   margin-right: -50px;
+  margin: 10px;
+  text-align: right;
 }
 .reponse hr{
   width: 90%;
@@ -265,8 +351,8 @@ input:checked[type="checkbox"]:before{
   background-color: rgb(199, 199, 199);
 }
 .reponse .react{
-  margin-top: -15px;
-  margin: 10px;
+  margin-top: -10px;
+  margin-left: 10px;
   
 }
 .bi-fire:hover{
@@ -280,4 +366,11 @@ color: rgb(255, 60, 0);
 }
 .bi-reply{
   float: right;
+}
+.bi-person-circle{
+  color: #24A3AE;
+  margin-top: -6px;
+}
+.response .btn-outline-dark{
+  margin-top: 20px;
 }
