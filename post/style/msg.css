@@ -1,0 +1,506 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap');
+:root {
+  --white: #fff;
+  --gray: #c4c4c4;
+  --light-purple: #564ccf;
+  --dark-purple: #4c3fe2;
+}
+* {
+  margin: 0;  
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #131619;
+  
+}
+/* le nav bar */
+.navbar{
+  background-color: #000000;
+  height: 55px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+  transition: 0.5s;
+  
+}
+.navbar ul{
+  position: absolute;
+  top: 50%;
+  left: 47%;
+  transform: translate(-50%,-50%);
+  display: flex;
+}
+.navbar ul li{
+  list-style: none;
+  text-align: center;
+  display: block;
+
+}
+.navbar ul li .icon .notif{
+  background-color: #da0f0f;
+  border-radius: 40%;
+  margin-top: 5px;
+  margin-right: 28px;
+  display: flex;
+  position: fixed;
+}
+.navbar ul li a .icon .bell{
+  margin-top: px;
+  }
+  .navbar ul li a .icon .msg{
+
+  }
+.navbar ul li a span{
+  color: #fff;
+  font-size: 9px;
+  font-weight: 1000px;
+  vertical-align: top;
+  padding: 3px;
+  top: 50%;
+
+}
+.navbar ul li a span:hover{
+  color: #fff;
+}
+.navbar ul li hr{
+  color: #c2163e;
+  margin-right: 50px;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #c6c6c6;
+
+}
+.navbar ul li a:hover{
+  color: #e22a55;
+}
+.navbar ul li a .icon{
+  font-size: 7px;
+  margin-right: 50px;
+  width: 90px;
+  height: 50px;
+  border-radius:10px; 
+}
+.navbar ul li a .icon:hover{
+  background-color: #252525;
+}
+.navbar ul li a .name{
+  font-size: 12px;
+}
+.navbar ul  img{
+  height: 20px;
+  margin-left: 190px;
+  margin-top: 15px;
+ 
+}
+.navbar ul .user{
+  width: 60px;
+  height: 50px; 
+  background-color: rgb(0, 0, 0);
+}
+.navbar ul .user:hover{
+background-color: #252525;
+}
+.navbar ul .logo2 img{
+  height: 35px;
+  width: 35px;
+  float: right;
+  margin: 10px;
+  border-radius: 50%;
+  display: block;
+  
+}
+.navbar ul  label a{
+  color: #fff;
+  float: right;
+  margin-top: 14px;
+  text-decoration: none;
+}
+ 
+.fa-square-caret-down{
+  color: #d80032;
+  font-size: 20px;
+  margin-top: 14px;
+}
+/* la parite de milieu de la page  */
+.paper{
+  display: flex;
+}
+.milieu{
+  background-color:#0f1113;
+  width: 800px;
+  margin-right: 25%;
+}
+main{
+  background-color:#fff;
+  width: 650px;
+  margin-bottom: 20px;
+  margin-right: 10%;
+  margin-top: 14px;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+
+}
+main h1{
+  color: #fff;
+}
+main  H2{
+  color: black;
+  text-align: right;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  list-style: none;
+  display: block;
+
+}
+main   h3{
+  color: #919191;
+  text-align: left;
+  font-size: 10px;
+  margin-top: -46px;
+  padding: 20px;
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  
+}
+main   h3:hover{
+  color: #131619;
+}
+main .cont{
+  background-color:#e4e4e4;
+  height: 30px;
+  width: 70%;
+  border-radius: 0.5rem;
+  margin-right: 80px;
+}
+a .cont-c {
+  height: 25px;
+  width: 34%;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.2rem;
+  margin-right: 83px;
+  margin-top: -27px;
+  text-decoration: none;
+  list-style: none;
+  
+}
+a .cont-c p{
+  text-align: center;
+  font-weight: bold;
+  font-size: 13px;
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  color: #000000;
+}
+a:link{
+  text-decoration: none !important;
+}
+.cont p{
+  margin-left: 40px;
+}
+.cont-d{
+  height: 25px;
+  width: 35%;
+  background-color: #e4e4e4;
+  border-radius: 0.2rem;
+  margin-right: 304px;
+  margin-top: -23px;
+  
+}
+.cont-d P{
+  font-weight: bold;
+  font-size: 13px;
+  text-align: center;
+  text-decoration: none;
+  list-style: none;
+  display: block;
+  color: #949494;
+}
+.contenu{
+  size: 30px;
+  padding: 18px 0;
+  margin: 18px;
+}
+
+.contenu img{
+  height: 50px;
+  width: 50px;
+  float: right;
+  border-radius: 50%;
+  margin-left: 15px;
+}
+.contenu p{
+  font-size: 15px;
+  font-weight: 400;
+}
+.contenu p a{
+  text-decoration: none;
+  color: #000000;
+}
+.fa-ellipsis-vertical{
+  color:#3f3f3f;
+  font-size: 25px;
+  margin-right: 620px;
+  text-align: left;
+}
+.contenu label{
+  color: #949494;
+  text-align: right;
+  font-size: 13px;
+  margin-top: -40px;
+}
+.contenu label a{
+  color:#e9053a;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+
+
+
+ 
+/* la partie gauche de la page */
+
+.sidebar {
+  width: 322px;
+  background-color: #131619;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 1230px;
+  position: fixed;
+}
+.sidebar h5{
+  color: #fff;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+.sidebar label{
+  color: #fff;
+  text-align: right;
+  font-size:15px;
+  font-weight: bold;
+}
+.sidebar  a{
+  text-decoration: none;
+  display: block;
+  color: #e9053a;
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.sidebar  a:hover{
+  color: #c70835;
+  text-decoration: none;
+  font-weight: bold;
+}
+.sidebar hr{
+  background-color: #fff;
+  text-align: right;
+  margin-top: 5px;
+}
+.sidebar .classement{
+  display: flex;
+}
+.sidebar .classement p{
+color:#c4c4c4;
+text-align: right;
+}
+.sidebar .classement p img{
+  height: 35px;
+  width: 35px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.sidebar .classement h6{
+  color: #fff;
+  margin-top: 10px;
+}
+.sidebar .classement h4{
+  font-size: 12px;
+  color: #c4c4c4;
+  margin-top: 30px;
+  margin-right: -80px;
+}
+.sidebar .classement h3{
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+  margin-right: 150px;
+}
+.sidebar .about{
+  display: flex;
+}
+.sidebar .about{
+  padding: 8px;
+}
+.sidebar .about a h3{
+  text-align: right;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+.sidebar .about a h2{
+  text-align: right;
+  font-size: 14px;
+  color:#919191;
+}
+.sidebar .about a h2:hover{
+  color: #d80032;
+}
+
+/* la partie droit de la page */
+
+.outbar {
+  width: 322px;
+  background-color: #131619;
+  flex-direction: column;
+  margin-top: 10px;
+  margin-right: 40px;
+  position: fixed;
+}
+.outbar h5{
+  color: #fff;
+  margin-top: 10px;
+  font-size: 20px;
+  text-align: right;
+  font-weight: bold;
+}
+.outbar label{
+  color: #fff;
+  text-align: right;
+  font-size:15px;
+  font-weight: bold;
+}
+.outbar  a{
+  text-decoration: none;
+  display: block;
+  color: #e9053a;
+  text-align: right;
+  font-size: 12px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.outbar  a:hover{
+  color: #c70835;
+  text-decoration: none;
+  font-weight: bold;
+}
+.outbar hr{
+  background-color: #fff;
+  text-align: right;
+  margin-top: 5px;
+}
+.outbar .classement{
+  display: flex;
+}
+.sidebar .classement p{
+color:#c4c4c4;
+text-align: right;
+}
+.outbar .classement p img{
+  height: 35px;
+  width: 35px;
+  margin: 10px;
+  border-radius: 50%;
+}
+.outbar .classement h6{
+  color: #fff;
+  margin-top: 10px;
+}
+.outbar .classement h4{
+  font-size: 12px;
+  color: #c4c4c4;
+  margin-top: 30px;
+  margin-right: -80px;
+}
+.outbar .classement h3{
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+  margin-right: 150px;
+}
+.outbar .about{
+  display: flex;
+}
+.outbar .about{
+  padding: 8px;
+}
+.outbar .about a h3{
+  text-align: right;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+}
+.outbar .about a h2{
+  text-align: right;
+  font-size: 14px;
+  color:#919191;
+}
+.outbar .about a h2:hover{
+  color: #d80032;
+}
+.fa-users{
+  color: #fff;
+  font-size: 29px;
+}
+.outbar .compte img{
+  height: 50px;
+  width: 50px;
+  float: right;
+  margin: 10px;
+  margin-top: -8px;
+  border-radius: 50%;
+}
+.fa-bell{
+  color: #fff;
+  margin-top: 10px;
+  font-size: 24px;
+}
+.fa-envelope{
+  color: #e9053a;
+  margin-top: 10px;
+  font-size: 24px;
+}
+.fa-house{
+  color: #fff;
+  margin-top: 10px;
+  font-size: 23px;
+}
+.fa-user-group{
+  color: #fff;
+  margin-top: 10px;
+  font-size: 23px;
+}
+.outbar .compte h2{
+  text-align: left;
+  margin-top: -35px;
+  color: #fff;
+  font-size: 14px;
+  margin-left: 30px;
+}
+.outbar .compte h3{
+  text-align: left;
+  margin-top: -22px;
+}
+.outbar .compte h4{
+  text-align: right;
+  color: #fff;
+  margin-right: -23px;
+  margin-bottom: -30px;
+}
+
+
+
+
